@@ -1,0 +1,108 @@
+.cardOne{
+    width: 1008px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .cardOne{
+        width: 880px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .cardOne{
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cardOne{
+        width: 98%;
+    }
+}
+
+.cardTitle{
+    position: relative;
+    left: 30px;
+    top: 28px;
+    z-index: 100;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 微软雅黑;
+    color: #FFFFFF;
+    border: solid 2px #409EFF;
+    border-radius: 15px;
+    width: 150px;
+    text-align: center;
+    background-color: #409EFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardTwo{
+    padding: 32px 40px 0;
+    margin-bottom: 16px;
+    background-color: #F2F6FC;
+    opacity: 0.9;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardTwo > a{
+    width: calc(25% - 20px);;
+    text-align: center;
+    border-radius: 8px;
+    padding: 6px 12px;
+    background-color: transparent;
+    border: solid 2px #c0c4cc;
+    color: #303133;
+    margin: 0 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 微软雅黑;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.cardTwo > a:hover {
+    border-radius: 8px;
+    border: solid 2px #c0c4cc;
+    background-color: #409EFF;
+    color: #F2F6FC;
+}
+
+@media screen and (max-width: 1200px) {
+    .cardTwo > a{
+        width: calc(25% - 20px);
+    }
+}
+
+/* 在 992px 或更小的屏幕上，宽度设置为90%*/
+@media screen and (max-width: 1080px) {
+    .cardTwo > a{
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* 在 600 像素或更小的屏幕上, 宽度设置为90% */
+@media screen and (max-width: 600px) {
+    .cardTwo{
+        padding: 32px 20px 0;
+    }
+    .cardTwo > a{
+        width: calc(50% - 20px);
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+/*黑暗模式*/
+body.dark .cardTwo{
+    background-color: #343434;
+    opacity: 1;
+}
+
+body.dark .cardTwo > a{
+    color: #F2F6FC;
+}

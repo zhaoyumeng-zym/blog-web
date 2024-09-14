@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  background: #f0f2f5!important;
+}
+
+
+/* 页眉/Blog 标题 */
+.header {
+  padding: 40px 30px 10px;
+  text-align: center;
+}
+
+.header .logoPic{
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  margin-right: 12px;
+}
+
+.header h1 > a{
+  font-size: 60px;
+  font-family: 华文新魏;
+  color: #303133;
+  margin-bottom: 0;
+  display: inline-block;
+  text-decoration: none
+}
+
+.header p{
+  font-size: 20px;
+  font-family: 华文新魏;
+  color: #606266;
+  margin-top: -10px;
+}
+
+.header .ant-switch{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .header h1 > a{
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .header .logoPic{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+  }
+  .header h1 > a{
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header .logoPic{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+  }
+  .header h1 > a{
+    font-size: 36px;
+    font-family: 华文行楷;
+  }
+  .header p{
+    font-size: 18px;
+    font-family: 华文行楷;
+  }
+}
+
+
+/* 页脚 */
+.footer {
+  padding: 80px 0 16px;
+  text-align: center;
+}
+
+.footer .note{
+  margin-top: 10px;
+}
+
+.footer svg {
+  font-size: 28px;
+}
+
+
+
+/*黑暗模式*/
+body.dark{
+  background-color: #303133!important;
+}
+
+body.dark .header h1 > a{
+  color: #F2F6FC;
+}
+
+body.dark .header p{
+  color: #F2F6FC;
+}
+
+body.dark .footer svg {
+  color: #F2F6FC;
+}
+
+body.dark .footer .note{
+  color: #F2F6FC;
+}
