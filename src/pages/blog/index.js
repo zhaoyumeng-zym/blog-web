@@ -17,6 +17,7 @@ const onChange = (checked) => {
     }
 };
 
+
 const content = (
     <div>
         <img src={codeQR} style={{width:'180px', height: '180px'}}></img>
